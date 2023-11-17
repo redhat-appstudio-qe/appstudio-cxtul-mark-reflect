@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-htxn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-with-depl-tenant/appstudio/dc-metro-map-htxn@sha256:c049219274ddf00a09401727cbcf03bb596e7b53482380d53c4fdb1e57d3ab3a
+        name: my-nodejs
+        resources: {}
+status: {}
